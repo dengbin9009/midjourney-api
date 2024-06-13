@@ -18,11 +18,11 @@ sequenceDiagram
     ThirdServer->>APIServer: 请求接口触发任务
     APIServer->>APIServer: 放入任务队列
     APIServer->>DiscordAPI: 调接口触发绘画任务
-    APIServer-->>ThirdServer: 返回是否触发成功
+    APIServer-->>XinyeServer: 返回是否触发成功
 
     DiscordAPI->>DiscordAPI: 触发Midjourney bot绘画任务
     DiscordAPI->>DiscordAPI: 监听MidJourney bot消息
-    DiscordAPI-->>ThirdServer: 返回监听实时消息
+    DiscordAPI-->>XinyeServer: 返回监听实时消息
     DiscordAPI-->>APIServer: 清除队列任务
 ```
 
