@@ -15,7 +15,7 @@ sequenceDiagram
     participant APIServer
     participant DiscordAPI
 
-    ThirdServer->>APIServer: 请求接口触发任务
+    XinyeServer->>APIServer: 请求接口触发任务
     APIServer->>APIServer: 放入任务队列
     APIServer->>DiscordAPI: 调接口触发绘画任务
     APIServer-->>XinyeServer: 返回是否触发成功
