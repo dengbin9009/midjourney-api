@@ -11,7 +11,7 @@
 
 ```mermaid
 sequenceDiagram
-    participant ThirdServer
+    participant XinyeServer
     participant APIServer
     participant DiscordAPI
 
